@@ -19,6 +19,8 @@ public class Main {
 
     public static double getInput() throws InvalidInputException {
         try {
+            // This is an example of an unchecked exception, because the compiler will not check if the errors was handled
+
             double input = Double.parseDouble(sc.nextLine());
         } catch (NumberFormatException e) {
             throw new InvalidInputException("Please Try Again; Enter a valid input.");
